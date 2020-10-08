@@ -1,4 +1,5 @@
-<head>
+<head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/391dd2d180.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">    
@@ -19,9 +20,12 @@
     </div>
     <div class='header'>
         <div class='header-content'>
-            <img src='./assets//logo.png' alt='evoke' />
+            <i onclick="toggleMenu('open')" class="fas fa-bars"></i>
 
-            <div class='header-menu'>
+            <img src='./assets/logo.png' alt='evoke' />
+
+            <div class='header-menu' id='header-menu'>
+                <i onclick="toggleMenu('close')" class="fas fa-times"></i>
                 <p>LANÇAMENTOS</p>
                 <p>SOLAR</p>
                 <p>GRAU</p>
@@ -49,6 +53,20 @@
 
         <div class='page-description'>
             <p>O Evocar de uma nova era transcende fronteiras étnicas e culturais, expressa o espírito de época e propõe um novo olhar sobre planos diferentes que se transpõem, criando um universo híbrido, plural e complementar. A colaboração Evoke X New Era comemora os 100 anos de trajetória da New Era, e ganha vida em dois acessórios de estilo que se completam, criando uma atmosfera atual e contemporânea. Foram customizados nos mínimos detalhes dois modelos de cada marca.</p>
+        </div>
+
+        <div class='slider'>
+            <div class='slide'>
+                <div class='slide-decoration'></div>
+                <img src='./assets/slider/1.jpg' id='slide' alt='slide' />
+            </div>
+
+            <div class='controls'>
+                <div onclick="changeSlide('1')" id='control-1' class='control control-active'></div>
+                <div onclick="changeSlide('2')" id='control-2' class='control'></div>
+                <div onclick="changeSlide('3')" id='control-3' class='control'></div>
+                <div onclick="changeSlide('4')" id='control-4' class='control'></div>
+            </div>
         </div>
 
         <video poster='./assets/mp4/02/poster.jpg' controls>
@@ -89,14 +107,14 @@
 
             <div class='pack-images'>
                 <div class='pack-images-column'>
-                    <img src='./assets/packs/1/new-era-kit-2.jpg' alt='new-era' />
-                    <img src='./assets/packs/1/new-era-kit-3.jpg' alt='new-era' />
-                    <img src='./assets/packs/1/new-era-kit-4.jpg' alt='new-era' />
-                    <img src='./assets/packs/1/new-era-kit-5.jpg' alt='new-era' />
+                    <img onclick="changePackImage('packOne', '2')" src='./assets/packs/1/2.jpg' alt='new-era' />
+                    <img onclick="changePackImage('packOne', '3')" src='./assets/packs/1/3.jpg' alt='new-era' />
+                    <img onclick="changePackImage('packOne', '4')" src='./assets/packs/1/4.jpg' alt='new-era' />
+                    <img onclick="changePackImage('packOne', '5')" src='./assets/packs/1/5.jpg' alt='new-era' />
                 </div>
 
                 <div class='pack-images-main'>
-                    <img src='./assets/packs/1/new-era-kit-1.jpg' alt='new-era' />
+                    <img src='./assets/packs/1/1.jpg' id='packOne' alt='new-era' />
                 </div>
             </div>
 
@@ -141,14 +159,14 @@
 
             <div class='pack-images'>
                 <div class='pack-images-column'>
-                    <img src='./assets/packs/2/new-era-kit-2.jpg' alt='new-era' />
-                    <img src='./assets/packs/2/new-era-kit-3.jpg' alt='new-era' />
-                    <img src='./assets/packs/2/new-era-kit-4.jpg' alt='new-era' />
-                    <img src='./assets/packs/2/new-era-kit-5.jpg' alt='new-era' />
+                    <img onclick="changePackImage('packTwo', '2')" src='./assets/packs/2/2.jpg' alt='new-era' />
+                    <img onclick="changePackImage('packTwo', '3')" src='./assets/packs/2/3.jpg' alt='new-era' />
+                    <img onclick="changePackImage('packTwo', '4')" src='./assets/packs/2/4.jpg' alt='new-era' />
+                    <img onclick="changePackImage('packTwo', '5')" src='./assets/packs/2/5.jpg' alt='new-era' />
                 </div>
 
                 <div class='pack-images-main'>
-                    <img src='./assets/packs/1/new-era-kit-1.jpg' alt='new-era' />
+                    <img src='./assets/packs/2/1.jpg' id='packTwo' alt='new-era' />
                 </div>
             </div>
 

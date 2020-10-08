@@ -89,6 +89,11 @@ button:hover {
     justify-content: space-between;
 }
 
+.header-content > i {
+    display: none;
+    font-size: 25px;
+}
+
 .header-content > form {
     display: flex;
     align-items: center;
@@ -115,6 +120,14 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header-menu > i {
+    display: none;
+    position: absolute;
+    top: 25;
+    right: 25;
+    font-size: 30px;
 }
 
 .header-menu > p {
@@ -154,6 +167,49 @@ button:hover {
     margin: 0 auto;
     font-size: 18px;
     font-weight: 200;
+}
+
+.slider {
+    width: 90%;
+    margin: 0 auto;    
+    padding: 50px 0 80px;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide > img {    
+    width: 100%;   
+}
+
+.slide-decoration {
+    width: 300px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.controls {
+    margin: 20px 0 0 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.control {
+    width: 80px;
+    height: 10px;
+    background-color: white;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+}
+
+.control-active {
+    background-color: #05904c;
 }
 
 .product-showcase {
@@ -262,7 +318,7 @@ button:hover {
 }
 
 .pack-images-column {
-    width: 25%;
+    width: 20%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -270,6 +326,7 @@ button:hover {
 
 .pack-images-column > img {
     margin: 0 0 30px 0;
+    width: 90%;
 }
 
 .pack-images-main {
