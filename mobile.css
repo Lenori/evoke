@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 1150px) {
-    video {
+    iframe {
         height: 400px;
     }
 
@@ -78,6 +78,10 @@
 }
 
 @media screen and (max-width: 950px) {
+    .page-description > p {
+        font-size: 15px;
+    }
+
     .product-showcase {
         flex-direction: column-reverse;
     }
@@ -104,7 +108,7 @@
 }
 
 @media screen and (max-width: 850px) {
-    video {
+    iframe {
         height: 250px;
     }
 }
